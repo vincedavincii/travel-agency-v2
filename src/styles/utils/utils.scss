@@ -1,0 +1,85 @@
+@use "../abstracts" as *;
+
+.container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+
+	@include responsive(large) {
+		max-width: 100%;
+		padding: 0 5rem;
+	}
+	@include responsive(medium) {
+		max-width: 100%;
+		padding: 0 4rem;
+	}
+	@include responsive(small) {
+		max-width: 100%;
+		padding: 0 2rem;
+	}
+	@include responsive(xsmall) {
+		max-width: 100%;
+		padding: 0 1.5rem;
+	}
+}
+
+.pr {
+	position: relative;
+}
+
+.group {
+	margin-bottom: 1.3rem;
+
+	&_control {
+		display: flex;
+		width: 100%;
+		border-radius: 0.4rem;
+		outline: none;
+		font-size: 1.6rem;
+		border: 1px solid $silver;
+		height: 5rem;
+		padding: 0 2rem;
+	}
+	span {
+		font-size: 1.4rem;
+		display: inline-block;
+		color: $darkBlack;
+		cursor: pointer;
+	}
+	&__textarea {
+		@include control(10rem, 1.5rem, 1.5rem, $silverLight-45);
+		&::placeholder {
+			font-family: sans-serif;
+			font-size: 1.5rem;
+			// @include responsive(xsmall) {
+			//     font-size: 1.3rem;
+			// }
+		}
+	}
+}
+::placeholder {
+	color: $darkBlack;
+	font-size: 1.7rem;
+}
+.flex {
+	display: flex;
+}
+.space-between {
+	justify-content: space-between;
+}
+.y-center {
+	align-items: center;
+}
+
+.p-15 {
+	padding: 1.2rem;
+}
+
+.mr-minus-15 {
+	margin-right: -1.5rem;
+}
+.ml-minus-15 {
+	margin-left: -1.5rem;
+}

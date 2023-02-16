@@ -1,0 +1,16 @@
+@use "base/base";
+@use "../styles/components/header";
+@use "../styles/components/model";
+@use "../styles/components/nav";
+@use "../styles/components/toggle";
+@use "../styles/components/destinations";
+@use "../styles/components/destinationInfo";
+@use "../styles/components/city";
+@use "../styles/components/services";
+@use "../styles/components/reviews";
+@use "../styles/components/gallery";
+@use "../styles/components/footer";
+@use "../styles/components/contact";
+@use "./utils/utils.scss";
+@use "../styles/layouts/layout";
+@use "../styles/abstracts/buttons";
